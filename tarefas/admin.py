@@ -4,7 +4,7 @@ from .models import Tarefa
 # superUsuario
 # admin
 # ariel@admin.com
-# doce3400@
+# admin123
 
 # Register your models here.
 admin.site.register(Tarefa)
