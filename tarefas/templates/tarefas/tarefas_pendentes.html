@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Tarefas Pendentes{% endblock %}
+
+{% block content %}
+    <h1>Pendentes:</h1>
+    <div class="list-group" >
+        {% for tarefa in tarefas %}
+            <p><b>Descrição:</b> {{ tarefa.descricao }} </p>
+            <p><b>Categoria:</b> {{ tarefa.categoria }} </p>
+            <p><b>Criação:</b> {{ tarefa.criacao }} </p>
+            <hr>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+</head>
+    <body>
+        
+        
+    </body>
+</html> -->
