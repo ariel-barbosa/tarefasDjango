@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Tarefa, Usuario
+from .models import Tarefa
 from django.views.generic.edit import *
 from django.views.generic.list import *
 
@@ -10,10 +10,12 @@ class tarefas_list(ListView):
     context_object_name = 'tarefas'
 
 
-class usuario_list(ListView):
-    template_name = 'usuarios.html'
-    model = Usuario
-    context_object_name = 'usuarios'
+
+
+# class usuario_list(ListView):
+#     template_name = 'usuarios.html'
+#     model = Usuario
+#     context_object_name = 'usuarios'
 
 # def tarefas_pendentes_list(request):
 #     tarefas_pendentes = Tarefa.objects.all

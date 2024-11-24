@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Tarefa, Usuario
+from .models import Tarefa
 
 # user: ariel
 # emial: admin@email.com
@@ -7,4 +7,4 @@ from .models import Tarefa, Usuario
 
 # Registrar modelo
 admin.site.register(Tarefa)
-admin.site.register(Usuario)
+

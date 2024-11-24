@@ -1,11 +1,5 @@
 from django.db import models
 
-# modelos aqui
-class Usuario(models.Model):
-    nome = models.CharField(max_length=255, default='nome')
-    email = models.EmailField(max_length=255)
-
-
 class Tarefa(models.Model):
     OPCOES_STATUS = (
 
