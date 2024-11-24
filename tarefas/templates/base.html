@@ -13,7 +13,7 @@
 <body style="padding-top: 70px;">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">TaskLy</a>
+            <a class="navbar-brand" href="{% url 'tarefas_list' %}">TaskLy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#conteudo-navbar"
                 aria-controls="conteudo-navbar" aria-expanded="false" aria-label="Ativar navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="conteudo-navbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item active">
-                        <a class="nav-link active" aria-current="page" href="#">Usuario</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'usuario_list' %}">Usuario</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link active" aria-current="page" href="#">Tarefas</a>
