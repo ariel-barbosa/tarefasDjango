@@ -1,9 +1,10 @@
 from django.contrib import admin
-from .models import Tarefa
+from .models import Tarefa, Usuario
 
-# user: admin
+# user: ariel
 # emial: admin@email.com
-# senha: admin123
+# senha: ariel123
 
 # Registrar modelo
 admin.site.register(Tarefa)
+admin.site.register(Usuario)

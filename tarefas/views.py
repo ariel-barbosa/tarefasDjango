@@ -1,7 +1,23 @@
 from django.shortcuts import render
-from .models import Tarefa
+from .models import Tarefa, Usuario
+from django.views.generic.edit import *
+from django.views.generic.list import *
 
-def tarefas_pendentes_list(request):
-    tarefas_pendentes = Tarefa.objects.filter(status='pendente')
-    return render(request, 'tarefas/tarefas_pendentes.html',
-                  {'tarefas_pendentes':tarefas_pendentes})
+
+class tarefas_pendentes_list(ListView):
+    template_name = 'tarefas/index.html'
+    model = Tarefa
+    context_object_name = 'tarefas_pendentes'
+
+
+
+
+# def tarefas_pendentes_list(request):
+#     tarefas_pendentes = Tarefa.objects.all
+#     return render(request, 'tarefas/index.html',
+#                   {'tarefas_pendentes':tarefas_pendentes})
+
+# def usuario_list(request):
+#     usuario_list = Usuario.object.all
+#     return render(request, 'tarefas/usuario_list.html',
+#                 {'usuario_list':usuario_list})
